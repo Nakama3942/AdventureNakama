@@ -1,3 +1,5 @@
+/game/.godot
+
 # C++ objects and libs
 *.slo
 *.lo

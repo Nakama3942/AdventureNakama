@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://dftyvxxvr0fjv"]
+
+[ext_resource type="Texture2D" uid="uid://c2adwpmo56a12" path="res://sprite/hero.png" id="1_abtxr"]
+[ext_resource type="Script" path="res://script/player.gd" id="1_rrwlp"]
+[ext_resource type="PackedScene" uid="uid://c43wydk8uqgo" path="res://scene/camera.tscn" id="3_hjda0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_npkb8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_abtxr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nj0x7"]
+size = Vector2(16.5, 34)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_rrwlp")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_npkb8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -4)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_nj0x7")
+
+[node name="Camera" parent="." instance=ExtResource("3_hjda0")]
+zoom = Vector2(1.5, 1.5)
