@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4hy1ku1axbb3"
-path="res://.godot/imported/bricks_tiles.png-05fe26f77e87f38cd906c01e2e272b9b.ctex"
+uid="uid://65u0a56aa1rr"
+path="res://.godot/imported/Nakama.png-37f56c424bf16de315f65c4ec849dc3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprite/bricks_tiles.png"
-dest_files=["res://.godot/imported/bricks_tiles.png-05fe26f77e87f38cd906c01e2e272b9b.ctex"]
+source_file="res://sprite/Nakama.png"
+dest_files=["res://.godot/imported/Nakama.png-37f56c424bf16de315f65c4ec849dc3b.ctex"]
 
 [params]
 

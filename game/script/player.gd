@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var WALK_SPEED = 200 # How fast the player will move (pixels/sec).
-@export var jumpForce = 170
+@export var jumpForce = 100
 @export var GRAVITY = 200.0
 
 # Called when the node enters the scene tree for the first time.
