@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://72kfy6dwwxhx"]
+[gd_scene load_steps=7 format=3 uid="uid://72kfy6dwwxhx"]
 
 [ext_resource type="PackedScene" uid="uid://dftyvxxvr0fjv" path="res://scene/player/player.tscn" id="1_3t3mw"]
 [ext_resource type="PackedScene" uid="uid://3cv0jxqpg1u5" path="res://scene/object/lantern.tscn" id="3_0jrpd"]
 [ext_resource type="PackedScene" uid="uid://drj1iue28smar" path="res://scene/tile_maps/castle.tscn" id="3_xk8rp"]
 [ext_resource type="PackedScene" uid="uid://dpflqkxu3nkds" path="res://scene/service/darkness.tscn" id="4_kxjwn"]
+[ext_resource type="PackedScene" uid="uid://mjyl84kidpt3" path="res://scene/particle/falling_leaves.tscn" id="5_qlxfs"]
+[ext_resource type="PackedScene" uid="uid://c78cj3sjqndyc" path="res://scene/item/apple.tscn" id="6_0584b"]
 
 [node name="Castle" type="Node2D"]
 
@@ -28,3 +30,9 @@ position = Vector2(713, 78)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Darkness"]
 polygon = PackedVector2Array(-3, -15, -62, 3, -81, 91, -755, 91, -761, 237, 125, 236, 120, 99, 57, 80, 53, -6)
+
+[node name="CPUParticles2D" parent="." instance=ExtResource("5_qlxfs")]
+position = Vector2(444, -157)
+
+[node name="Apple" parent="." instance=ExtResource("6_0584b")]
+position = Vector2(562, -24)

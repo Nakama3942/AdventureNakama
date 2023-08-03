@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c78cj3sjqndyc"]
+
+[ext_resource type="Script" path="res://script/apple.gd" id="1_pmj2c"]
+[ext_resource type="Texture2D" uid="uid://ld8pwxbb1m5v" path="res://sprite/apple.png" id="1_r5otu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4blqo"]
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qysqw"]
+radius = 7.0
+
+[node name="Apple" type="RigidBody2D"]
+collision_layer = 2
+input_pickable = true
+mass = 0.2
+script = ExtResource("1_pmj2c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r5otu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_4blqo")
+
+[node name="HitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_qysqw")
+debug_color = Color(0.976471, 0, 0.4, 0.419608)
+
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
