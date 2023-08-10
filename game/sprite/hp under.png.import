@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1xrnw4wytlq8"
-path="res://.godot/imported/hp over.png-18e6e21257dee01502401c1a50a8ee0f.ctex"
+uid="uid://bfbffdgy4uens"
+path="res://.godot/imported/hp under.png-81984b13c46638306cb2378561e8753d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene/ui/hp over.png"
-dest_files=["res://.godot/imported/hp over.png-18e6e21257dee01502401c1a50a8ee0f.ctex"]
+source_file="res://sprite/hp under.png"
+dest_files=["res://.godot/imported/hp under.png-81984b13c46638306cb2378561e8753d.ctex"]
 
 [params]
 

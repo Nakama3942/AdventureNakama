@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfbffdgy4uens"
-path="res://.godot/imported/hp under.png-7df0e848700c107af4b2136e575a1765.ctex"
+uid="uid://dtchpbmhlgat"
+path="res://.godot/imported/hp progress.png-72d766003b6c40aa9d744da82ce0cddf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene/ui/hp under.png"
-dest_files=["res://.godot/imported/hp under.png-7df0e848700c107af4b2136e575a1765.ctex"]
+source_file="res://sprite/hp progress.png"
+dest_files=["res://.godot/imported/hp progress.png-72d766003b6c40aa9d744da82ce0cddf.ctex"]
 
 [params]
 

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd6pbdlbn72sc"]
+
+[ext_resource type="PackedScene" uid="uid://cqx8gi7ii8gvy" path="res://scene/ui/hud.tscn" id="1_etvsx"]
+[ext_resource type="PackedScene" uid="uid://bvc0xsh6qqj4a" path="res://scene/ui/pause_menu.tscn" id="2_7vgc8"]
+
+[node name="SceneCompound" type="Node2D"]
+
+[node name="HUD" parent="." instance=ExtResource("1_etvsx")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("2_7vgc8")]

@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://72kfy6dwwxhx"]
+[gd_scene load_steps=8 format=3 uid="uid://72kfy6dwwxhx"]
 
+[ext_resource type="PackedScene" uid="uid://cd6pbdlbn72sc" path="res://scene/ui/scene_compound.tscn" id="1_2gedk"]
 [ext_resource type="PackedScene" uid="uid://dftyvxxvr0fjv" path="res://scene/player/player.tscn" id="1_3t3mw"]
 [ext_resource type="PackedScene" uid="uid://3cv0jxqpg1u5" path="res://scene/object/lantern.tscn" id="3_0jrpd"]
 [ext_resource type="PackedScene" uid="uid://drj1iue28smar" path="res://scene/tile_maps/castle.tscn" id="3_xk8rp"]
@@ -8,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://c78cj3sjqndyc" path="res://scene/item/apple.tscn" id="6_0584b"]
 
 [node name="Castle" type="Node2D"]
+
+[node name="SceneCompound" parent="." instance=ExtResource("1_2gedk")]
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("1_3t3mw")]
 position = Vector2(627, -9)
@@ -29,7 +32,7 @@ layer_6/tile_data = PackedInt32Array(786471, 983041, 8, 786469, 917505, 8, 78647
 position = Vector2(713, 78)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Darkness"]
-polygon = PackedVector2Array(-3, -15, -62, 3, -81, 91, -755, 91, -761, 237, 125, 236, 120, 99, 57, 80, 53, -6)
+polygon = PackedVector2Array(-3, -15, -62, 3, -81, 91, -755, 91, -761, 237, 122, 235, 119, 96, 57, 80, 53, -6)
 
 [node name="CPUParticles2D" parent="." instance=ExtResource("5_qlxfs")]
 position = Vector2(444, -157)
