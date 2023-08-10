@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dixls6vvqk3jc"]
+
+[ext_resource type="Texture2D" uid="uid://djj1u2i5ocrq5" path="res://sprite/lattice h.png" id="1_vl74o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p24nt"]
+size = Vector2(62, 1)
+
+[node name="LatticeH" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vl74o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_p24nt")
